@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Моя первая настоящая HTML-страничка</title>
+</head>
+<body>
+    <style>
+        body{background-color: black;}
+    </style>
+    
+    <script>
+var alphabet = 
+[
+        "1",    /*   ------>    */  "а",
+        "2",    /*   ------>    */  "б",
+        "3",    /*   ------>    */  "в",
+        "4",    /*   ------>    */  "г",
+        "5",    /*   ------>    */  "ґ",
+        "6",    /*   ------>    */  "д",
+        "7",    /*   ------>    */  "е",
+        "8",    /*   ------>    */  "є",
+        "9",    /*   ------>    */  "ж",
+        "10",   /*   ------>    */  "з",
+        "11",   /*   ------>    */  "и",
+        "12",   /*   ------>    */  "і",
+        "13",   /*   ------>    */  "ї",
+        "14",   /*   ------>    */  "й",
+        "15",   /*   ------>    */  "к",
+        "16",   /*   ------>    */  "л",
+        "17",   /*   ------>    */  "м",
+        "18",   /*   ------>    */  "н",
+        "19",   /*   ------>    */  "о",
+        "20",   /*   ------>    */  "п",
+        "21",   /*   ------>    */  "р",
+        "22",   /*   ------>    */  "с",
+        "23",   /*   ------>    */  "т",
+        "24",   /*   ------>    */  "у",
+        "25",   /*   ------>    */  "ф",
+        "26",   /*   ------>    */  "х",
+        "27",   /*   ------>    */  "ц",
+        "28",   /*   ------>    */  "ч",
+        "29",   /*   ------>    */  "ш",
+        "30",   /*   ------>    */  "щ",
+        "31",   /*   ------>    */  "ь",
+        "32",   /*   ------>    */  "ю",
+        "33",   /*   ------>    */  "я",
+        "0",    /*   ------>    */  " ",
+];
+var a = false;
+    var input = prompt("text");
+    var obr = input.toLowerCase();
+    var output = "";
+    for (var i = 0; i < obr.length; i++) {
+      if (a)    a=false;
+      else if (obr[i] === alphabet[1])  output += alphabet[2];
+      else if (obr[i] === alphabet[3]) output += alphabet[4];
+      else if (obr[i] === alphabet[5]) output += alphabet[6];
+      else if (obr[i] === alphabet[7])  output += alphabet[8];
+      else if (obr[i] === alphabet[9]) output += alphabet[10];
+      else if (obr[i] === alphabet[11]) output += alphabet[12]; 
+      else if (obr[i] === alphabet[13]) output += alphabet[14];
+      else if (obr[i] === alphabet[15])  output += alphabet[16];
+      else if (obr[i] === alphabet[17]) output += alphabet[18];
+      else if (obr[i] === alphabet[19]) output += alphabet[20];
+      else if (obr[i] === alphabet[21]) output += alphabet[22];
+      else if (obr[i] === alphabet[23]) output += alphabet[24];
+      else if (obr[i] === alphabet[25]) output += alphabet[26];
+      else if (obr[i] === alphabet[27]) output += alphabet[28];
+      else if (obr[i] === alphabet[29]) output += alphabet[30];
+      else if (obr[i] === alphabet[31]) output += alphabet[32];
+      else if (obr[i] === alphabet[33]) output += alphabet[34];
+      else if (obr[i] === alphabet[35]) output += alphabet[36];
+      else if (obr[i] === alphabet[37]) output += alphabet[38];
+      else if (obr[i] === alphabet[39]) output += alphabet[40];
+      else if (obr[i] === alphabet[41]) output += alphabet[42];
+      else if (obr[i] === alphabet[43]) output += alphabet[44];
+      else if (obr[i] === alphabet[45]) output += alphabet[46];
+      else if (obr[i] === alphabet[47]) output += alphabet[48];
+      else if (obr[i] === alphabet[49]) output += alphabet[50];
+      else if (obr[i] === alphabet[51]) output += alphabet[52];
+       else {
+        output += obr[i];
+      }
+    }
+    alert(output);
+    </script>
+</body>
+</html>
